@@ -4,7 +4,12 @@ public class test{
     System.out.println(one);
     System.out.println("Quersumme: " +quersumme(one));
     System.out.println("Sum: "+sum(one));
-    System.out.println("Fact: "+fact(one));
+    if(fact(one)<0){
+      System.out.println("Fact not possible");
+    }
+    else{
+      System.out.println("Fact: "+fact(one));
+    }
   }
   public static long quersumme(long n){
      if(n>0){
